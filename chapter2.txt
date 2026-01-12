@@ -1,0 +1,1324 @@
+Heading elements are organized into six
+
+levels: h1 through h6. The text within a head-
+ing element is rendered as a “block” of text by
+
+the browser (referred to as block display) and
+appears with empty space (sometimes called
+“white space” or “negative space”) above and
+below. The size of the text is largest for <h1>
+(called a heading 1 tag) and smallest for <h6>
+(called a heading 6 tag). Depending on the font
+being used, the text within <h4>, <h5>, and
+<h6> tags may be displayed smaller than the
+default text size. All text within heading tags is
+displayed with bold font weight.
+Figure 2.1 shows a web page document with
+six levels of headings.
+
+Heading Element
+
+FIGURE 2.1 Sample heading.html.
+
+Hands-On Practice 2.1
+To create the web page shown in Figure 2.1, launch a text editor and open the
+template.html file from the chapter2 folder in the student files. Modify the title element
+and add heading tags to the body section as indicated by the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Heading Example</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+</body>
+</html>
+
+Heading Element 29
+
+Save the document as heading.html on your hard drive or flash drive. Launch a browser
+such as Edge or Firefox to test your page. It should look similar to the page shown in
+Figure 2.1. You can compare your work with the solution found in the student files
+(chapter2/heading.html).
+
+FIGURE 2.2 Heading tags outline the page.
+
+Accessibility and Headings
+Heading tags can help to make your pages more accessible and usable. It is good coding
+practice to use heading tags to outline the structure of your web page content. To indicate
+areas within a page hierarchically, code heading tags numerically as appropriate (h1, h2,
+h3, and so on), and include page content in block display elements such as paragraphs
+and lists. In Figure 2.2, the <h1> tag
+contains the name of the website in the
+logo header area at the top of the web
+page, the <h2> tag contains the major topic
+or name of the page in the content area,
+and other heading elements are coded
+in the content area as needed to identify
+subtopics.
+Visually challenged visitors who are using
+a screen reader can configure the software
+to display a list of the headings used on
+a page in order to focus on the topics that
+interest them. Your well-organized page
+will be more usable for every visitor to
+your site, including those who are visually
+challenged.
+More Heading Options in HTML5
+You may have heard about the HTML5 header element. The header element offers additional
+options for configuring headings and typically contains an h1 element. We’ll introduce the
+header element later in this chapter.
+
+Why doesn’t the heading tag go in the head section?
+
+It’s common for students to try to code the heading tags in the head section of the docu-
+ment, but someone doing this won’t be happy with the way the browser displays the web
+
+page. Even though “heading tag” and “head section” sound similar, always code heading tags in the body
+section of the web page document.
+
+30 Chapter 2 ◗ HTML Basics
+Paragraph
+Element
+
+A paragraph element groups sentences and sections of text together. Text within <p> and
+</p> tags is rendered as block display with empty space above and below.
+Figure 2.3 shows a web page document containing a paragraph after the first heading.
+
+FIGURE 2.3 Web page using headings and a paragraph.
+
+Hands-On Practice 2.2
+To create the web page shown in Figure 2.3, launch a text editor and open the
+heading.html file from the chapter2 folder in the student files. Modify the page title and
+add a paragraph of text to your page below the line with the <h1> tags and above the line
+with the <h2> tags:
+
+Paragraph Element 31
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Paragraph Example</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Heading Level 1</h1>
+<p>This is a sample paragraph. Heading tags can help to make your
+pages more accessible and usable. It is good coding practice to use
+heading tags to outline the structure of your web page content.
+</p>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+</body>
+</html>
+Save the document as paragraph.html on your hard drive or flash drive. Launch a browser
+to test your page. It should look similar to the page shown in Figure 2.3. You can compare
+your work with the solution found in the student files (chapter2/paragraph.html). Notice how
+the text in the paragraph wraps automatically as you resize your browser window.
+
+Alignment
+As you test your web pages, you may notice that the headings and text begin near the left
+margin. This is called left alignment, and it is the default alignment for web pages. There
+are times when you want a paragraph or heading to be centered or right aligned (justified).
+In previous versions of HTML, the align attribute can be used for this. However, the align
+attribute is obsolete in HTML5, which means that the attribute has been removed from the
+W3C HTML5 specification. You’ll learn techniques to configure alignment with Cascading
+Style Sheets (CSS) in Chapters 6 through 8.
+
+When writing for the Web, avoid long paragraphs. People tend
+to skim web pages rather than reading them word for word.
+Use heading tags to outline the page content along with short
+paragraphs (about three to five sentences each) and lists (which you’ll learn
+about later in this chapter).
+
+32 Chapter 2 ◗ HTML Basics
+Line Break and
+Horizontal Rule
+
+The Line Break Element
+The line break element causes the browser to
+advance to the next line before displaying the next
+element or text on a web page. The line break tag
+is not coded as a pair of opening and closing tags.
+It is a void element and is coded as <br>. Figure
+2.4 shows a web page document with a line break
+after the first sentence in the paragraph.
+Hands-On Practice 2.3
+To create the web page shown in Figure 2.4, launch
+a text editor and open the paragraph .html file from
+the chapter2 folder in the student files. Modify the
+
+text between the title tags to be “Line Break Exam-
+ple.” Place your cursor after the first sentence in the
+
+paragraph (after “This is a sample paragraph.”). Press the Enter key. Save your file. Test your
+
+page in a browser and notice that even though your source code displayed the “This is a sam-
+ple paragraph.” sentence on its own line, the browser did not render it that way. A line break
+
+tag is needed to configure the browser to display the second sentence on a new line. Edit the
+file in a text editor and add a <br> tag after the first sentence in the paragraph as shown in
+the following code snippet:
+<body>
+<h1>Heading Level 1</h1>
+<p>This is a sample paragraph. <br> Heading tags can help to make your
+pages more accessible and usable. It is good coding practice to use
+heading tags to outline the structure of your web page content.
+</p>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+</body>
+Save your file as linebreak.html. Launch a browser to test your page. It should look similar
+to the page shown in Figure 2.4. You can compare your work with the solution found in the
+student files (chapter2/linebreak.html).
+FIGURE 2.4 Notice the line break after the first sentence.
+
+Line Break and Horizontal Rule 33
+
+The Horizontal Rule Element
+Web designers often use visual elements
+such as lines and borders to separate or
+define areas on web pages. The horizontal rule
+element, <hr>, configures a horizontal line
+across a web page. Since the horizontal rule
+element does not contain any text, it is coded
+as a void element and not in a pair of opening
+and closing tags. The horizontal rule element
+has an additional purpose in HTML5, it can be
+used to indicate a thematic break or change
+in the content. Figure 2.5 shows a web page
+document (also found in the student files at
+chapter2/hr.html) with a horizontal rule after
+the paragraph. In Chapter 6, you’ll learn how
+to configure lines and borders on web page
+elements with Cascading Style Sheets (CSS).
+Hands-On Practice 2.4
+To create the web page shown in Figure 2.5, launch a text editor and open the
+linebreak.html file from the chapter2 folder in the student files. Modify the text between the
+title tags to be: Horizontal Rule Example. Place your cursor on a new line after the </p>
+tag. Code the <hr> tag on the new line as shown in the following code snippet:
+<body>
+<h1>Heading Level 1</h1>
+<p>This is a sample paragraph. <br> Heading tags can help to make your
+pages more accessible and usable. It is good coding practice to use
+heading tags to outline the structure of your web page content.
+</p>
+<hr>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+</body>
+Save your file as hr.html. Launch a browser to test your page. It should look similar to
+the page shown in Figure 2.5. You can compare your work with the solution found in the
+student files (chapter2/hr.html).
+
+FIGURE 2.5 The horizontal line is below the paragraph.
+
+When you are tempted to use a horizontal rule on a web page, consider whether it is really
+needed. Usually, just leaving extra blank space on the page will serve to separate the
+content.
+
+34 Chapter 2 ◗ HTML Basics
+
+Besides organizing text in paragraphs and headings, sometimes you need to add a quota-
+tion to a web page. The blockquote element is used to display a block of quoted text in a
+
+special way—indented from both the left and right margins. A block of indented text begins
+with a <blockquote> tag and ends with a </blockquote> tag.
+Figure 2.6 shows a web page document with a heading, a paragraph, and a blockquote.
+
+Blockquote
+Element
+
+FIGURE 2.6 The text within the blockquote
+element is indented.
+
+You’ve probably noticed how convenient the <blockquote> tag could be if you needed
+to indent an area of text on a web page. You may have wondered whether it would be OK to
+use <blockquote> anytime you’d like to indent text or whether the blockquote element is
+reserved only for long quotations. The semantically correct usage of the <blockquote> tag is to use it
+only when displaying large blocks of quoted text within a web page. Why should you be concerned about
+semantics? Consider the future of the Semantic Web, described in Scientific American as “A new form of
+Web content that is meaningful to computers will unleash a revolution of new possibilities.” Using HTML
+in a semantic, structural manner is one step toward the Semantic Web. So, avoid using a <blockquote>
+just to indent text. You’ll learn modern techniques to configure margins and padding on elements later in
+this book.
+
+Blockquote Element 35
+
+Hands-On Practice 2.5
+To create the web page shown in Figure 2.6, launch a text editor and open the
+template.html file from the chapter2 folder in the student files. Modify the text in the title
+element. Add a heading tag, a paragraph tag, and a blockquote tag to the body section as
+indicated by the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blockquote Example</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>The Power of the Web</h1>
+<p>According to Tim Berners-Lee, the inventor of the World Wide Web,
+at https://www.w3.org/Press/IPO-announce:
+</p>
+<blockquote>
+The power of the Web is in its universality. Access by everyone
+regardless of disability is an essential aspect.
+</blockquote>
+</body>
+</html>
+Save the document as blockquote.html on your hard drive or flash drive. Launch a browser
+such as Edge or Firefox to test your page. It should look similar to the page shown in
+Figure 2.6. You can compare your work with the solution found in the student files
+(chapter2/blockquote.html).
+
+Why does my web page still look the same?
+Often, students make changes to a web page but get frustrated because their browser
+shows an older version of the page. The following troubleshooting tips are helpful when
+you know you have modified your web page, but the changes do not show up in the browser:
+1. Be sure to save your web page file after you make changes.
+2. Verify the location where you save your file—the hard drive, a particular folder.
+3. Verify the location from where your browser is requesting the file—the hard drive, a particular folder.
+4. Be sure to click the web browser Refresh or Reload button.
+
+36 Chapter 2 ◗ HTML Basics
+
+A phrase element indicates the context and meaning of the text between the container
+tags. It is up to each browser to interpret that style. Phrase elements are displayed directly
+in line with the text (referred to as inline display) and can apply to either a section of text or
+even a single character of text. For example, the <strong> element indicates that the text
+associated with it has strong importance and should be displayed in a “strong” manner in
+relation to normal text on the page.
+Table 2.1 lists common phrase elements and examples of their use. Notice that some tags,
+such as <cite> and <dfn>, result in the same type of display (italics) as the <em> tag in
+today’s browsers. These tags semantically describe the text as a citation or definition, but
+the physical display is usually italics in both cases.
+
+Phrase Element
+
+Element Example Usage
+<abbr> WIPO Identifies text as an abbreviation
+<b> bold text Has no extra importance but is styled in bold font
+<cite> cite text Identifies a citation or reference; usually displayed in italics
+<code> code text Identifies program code samples; usually a fixed-space font
+<dfn> dfn text Identifies a definition of a word or term; usually displayed in italics
+<em> emphasized text Causes text to be emphasized; usually displayed in italics
+<i> italicized text Has no extra importance but is styled in italics
+<kbd> kbd text Identifies keyboard input; usually has a fixed-space font
+<mark> mark text Highlights text in order to be easily referenced
+<q> “quoted” text Indicates a short quote; usually displays quotation marks
+<samp> samp text Shows program sample output; usually a fixed-space font
+<small> small text Defines a smaller text
+<strong> strong text Strong importance; usually displayed in bold
+<sub> subtext Displays a subscript as small text below the baseline
+<sup> suptext Displays a superscript as small text above the baseline
+<var> var text Identifies and displays a variable output; usually displayed in italics
+TABLE 2.1 Phrase Elements
+
+Phrase Element 37
+
+Note that all phrase elements are container tags—both an opening and a closing tag is
+used. As shown in Table 2.1, the <strong> element indicates that the text associated with
+it has “strong” importance. Usually the browser (or other user agent) will display <strong>
+text in bold type. A screen reader, such as JAWS or Window-Eyes, might interpret <strong>
+text to indicate that the text should be more strongly spoken. In the following line, the
+phone number is displayed with strong importance:
+Call for a free quote for your web development needs: 888.555.5555
+The code follows:
+<p>Call for a free quote for your web development needs:
+<strong>888.555.5555</strong></p>
+Notice that the opening <strong> and closing <strong> tags are within the paragraph
+tags (<p> and </p>). This code is properly nested and is considered to be well-formed.
+When improperly nested, the <p> and <strong> tag pairs overlap each other instead of
+being nested within each other. Improperly nested code will not pass validation testing (see
+the HTML Syntax Validation section later in this chapter) and may cause display issues.
+Figure 2.7 shows a web page document (also found in the student files at chapter2/em.html)
+that uses the <em> tag to display the emphasized phrase, “Access by everyone,” in italics.
+
+The code snippet follows:
+<blockquote>
+The power of the Web is in its universality.
+<em>Access by everyone</em> regardless of disability is an essential
+aspect.
+</blockquote>
+
+FIGURE 2.7 The <em> tag in action.
+
+38 Chapter 2 ◗ HTML Basics
+
+Lists are used on web pages to organize information. When writing for the Web, head-
+ings, short paragraphs, and lists can make your page more clear and easy to read. HTML
+
+can be used to create three types of lists—description lists, ordered
+lists, and unordered lists. All lists are rendered as block display with
+empty space above and below. This section focuses on the ordered
+list, which displays a numbering or lettering system to sequence the
+
+information in the list. An ordered list can be organized using numer-
+als (the default), uppercase letters, lowercase letters, uppercase
+
+Roman numerals, and lowercase Roman numerals. See Figure 2.8 for
+a sample ordered list.
+
+Ordered lists begin with an <ol> tag and end with an </ol> tag. Each list item begins with
+an <li> tag and ends with an </li> tag. The code to configure the heading and ordered
+list shown in Figure 2.8 follows:
+<h1>My Favorite Colors</h1>
+<ol>
+<li>Blue</li>
+<li>Teal</li>
+<li>Red</li>
+</ol>
+The type, start, and reversed Attributes
+The type attribute configures the symbol used for ordering the list. For example, to create
+an ordered list organized by uppercase letters, use <ol type="A">. Table 2.2 documents
+the type attribute and its values for ordered lists.
+
+Ordered List
+
+FIGURE 2.8 Sample ordered list.
+
+Another handy attribute that can be used with ordered lists is the start attribute, with
+which you can specify the start value for the list (for example, start="10"). Use the
+reversed attribute (reversed="reversed") to indicate that a list is in descending
+order.
+
+Value Symbol
+1 Numerals (the default)
+A Uppercase letters
+a Lowercase letters
+I Roman numerals
+i Lowercase Roman numerals
+TABLE 2.2 The type Attribute for Ordered Lists
+
+Ordered List 39
+
+Hands-On Practice 2.6
+In this Hands-On Practice, you will use a heading and an
+ordered list on the same page. To create the web page shown
+in Figure 2.9, launch a text editor and open the template.html
+file from the chapter2 folder in the student files. Modify the title
+element and add h1, h2, ol, and li tags to the body section, as
+indicated by the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Heading and List</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>My Favorite Colors</h1>
+<ol>
+<li>Blue</li>
+<li>Teal</li>
+<li>Red</li>
+</ol>
+</body>
+</html>
+Save your file as ol.html. Launch a browser and test your page. It should look similar to the
+page shown in Figure 2.9. You can compare your work with the solution in the student files
+(chapter2/ol.html).
+Take a few minutes to experiment with the type attribute. Configure the ordered list
+to use uppercase letters instead of numerals. Save your file as ola.html. Test your
+page in a browser. You can compare your work with the solution in the student files
+(chapter2/ola.html).
+
+FIGURE 2.9 An ordered list.
+
+Why is the web page code in the examples indented?
+Actually, it doesn’t matter to the browser if web page code is indented,
+but humans find it easier to read and maintain code when it is logically
+indented. This makes it easier for you or another web developer to understand the
+source code in the future. For example, it’s common practice to indent <li> tags a
+few spaces in from the left margin because it makes it easier to “see” the list with a
+quick glance at the source code. There is no “rule” as to how many spaces to indent.
+However, your instructor or the organization you work for may have a standard for you
+to follow. Web pages with consistent indentation are easier to maintain.
+
+40 Chapter 2 ◗ HTML Basics
+
+An unordered list displays a bullet, or list marker, before each list entry. The default list
+marker is determined by the browser but is typically a disc, which is a filled-in circle.
+See Figure 2.10 for a sample unordered list.
+Unordered List
+
+FIGURE 2.10 Sample unordered list.
+
+Unordered lists begin with a <ul> tag and end with a </ul> tag. The ul element is a block
+display element and is rendered with empty space above and below. Each list item begins
+
+with an <li> tag and ends with an </li> tag. The code to configure the heading and unor-
+dered list shown in Figure 2.10 is as follows:
+
+<h1>My Favorite Colors</h1>
+<ul>
+<li>Blue</li>
+<li>Teal</li>
+<li>Red</li>
+</ul>
+
+Can I change the “bullet” in an unordered list?
+Back in the day before HTML5, the type attribute could be included with a <ul>
+tag to change the default list marker to a square (type="square") or open circle
+(type="circle"). However, be aware that using the type attribute on an unordered list is considered
+obsolete in HTML5 because it is decorative and does not convey meaning. No worries, though—there
+are CSS techniques to configure list markers (bullets) to display images and shapes.
+
+Unordered List 41
+
+Hands-On Practice 2.7
+
+In this Hands-On Practice, you will use a heading and an unor-
+dered list on the same page. To create the web page shown in
+
+Figure 2.11, launch a text editor and open the template.html
+file from the chapter2 folder in the student files. Modify the
+title element and add h1, ul, and li tags to the body section as
+indicated by the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Heading and List</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>My Favorite Colors</h1>
+<u1>
+<li>Blue</li>
+<li>Teal</li>
+<li>Red</li>
+</ul>
+</body>
+</html>
+Save your file as ul.html. Launch a browser and test your page. It should look similar to
+the page shown in Figure 2.11. You can compare your work with the solution in the student
+files (chapter2/ul.html).
+
+FIGURE 2.11 An unordered list.
+
+42 Chapter 2 ◗ HTML Basics
+
+A description list can be used to organize terms and their descriptions. The terms stand out
+and their descriptions can be as long as needed to convey your message. Each term begins
+on its own line at the margin. Each
+description begins on its own line
+and is indented. Description lists
+
+are also handy for organizing Fre-
+quently Asked Questions (FAQs) and
+
+their answers. The questions and
+answers are offset with indentation.
+
+Any type of information that con-
+sists of a number of corresponding
+
+terms and associated descriptions
+is well suited to being organized in a
+description list. See Figure 2.12 for
+an example of a web page that uses
+a description list.
+Description lists begin with the <dl>
+tag and end with the </dl> tag.
+Each term or name in the list begins
+with the <dt> tag and ends with the
+</dt> tag. Each term description
+begins with the <dd> tag and ends
+with the </dd> tag.
+
+Hands-On Practice 2.8
+In this Hands-On Practice, you will use a heading and a description list on the same
+page. To create the web page shown in Figure 2.12, launch a text editor and open the
+template.html file from the chapter2 folder in the student files. Modify the title element and
+add h1, dl, dd, and dt tags to the body section as indicated by the following code:
+
+Description List
+
+FIGURE 2.12 A description list.
+
+Description List 43
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Description List</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>Sample Description List</h1>
+<dl>
+<dt>TCP</dt>
+<dd>Transmission Control Protocol is a method (protocol) used along
+with the Internet Protocol (IP) to send data in the form of message
+units, called packets, between computers over the Internet.</dd>
+<dt>IP</dt>
+<dd>Internet Protocol is the method or protocol by which data is
+sent from one computer to another on the Internet. Each computer on
+the Internet is uniquely identified by an IP address.</dd>
+<dt>FTP</dt>
+<dd>File Transfer Protocol is a protocol used to exchange files
+between computers on the Internet.</dd>
+<dt>HTTP</dt>
+<dd>Hypertext Transfer Protocol is the protocol used for exchanging
+text, graphic images, sound, video, and other multimedia files on the
+Web.</dd>
+</dl>
+</body>
+</html>
+Save your file as description.html. Launch a browser and test your page. It should look
+similar to the page shown in Figure 2.12. Don’t worry if the word wrap is a little different—
+
+the important formatting is that each <dt> term should be on its own line and the corre-
+sponding <dd> description should be indented under it. Try to resize your browser window
+
+and notice how the word wrap on the description text changes. You can compare your work
+with the solution in the student files (chapter2/description.html).
+
+Why does the text in my web page wrap differently than the examples?
+The text may wrap a little differently because your screen resolution or browser viewport
+size may not be the same as those on the computer used for the screen captures. That’s
+
+part of the nature of working with the Web—expect your web pages to look slightly different in the multi-
+tude of screen resolutions, browser viewport sizes, and devices that people will use to view your designs.
+
+44 Chapter 2 ◗ HTML Basics
+
+In order to use special characters such as quotation marks, the greater than sign (>), the
+less than sign (<), and the copyright symbol (©) in your web page document, you need to
+use special characters, sometimes called entity characters.1 For example, if you want to
+include a copyright line on your page as follows:
+© Copyright 2022 My Company. All rights reserved.
+you need to use the special character &copy; to display the copyright symbol, as shown
+below:
+&copy; Copyright 2022 My Company. All rights reserved.
+Another useful special character is &nbsp;, which stands for nonbreaking space. You may
+
+have noticed that web browsers treat multiple spaces as a single space. If you want mul-
+tiple spaces to be displayed in your text, you can use &nbsp; multiple times to indicate
+
+multiple blank spaces. This is acceptable if you simply need to tweak the position of an ele-
+ment a little. If you find that your web pages contain many &nbsp; special characters in a
+
+row, you should use a different method to align elements, such as configuring the margin or
+padding with Cascading Style Sheets (see Chapter 6).
+See Table 2.3 for a description of commonly used special characters and their codes.
+
+Special Entity
+Characters
+
+Character Entity Name Code
+” Quotation mark &quot;
+© Copyright symbol &copy;
+& Ampersand &amp;
+Empty space Nonbreaking space &nbsp;
+‘ Apostrophe &apos;
+– Long dash &mdash;
+| Vertical bar &#124;
+< Less than sign &lt;
+> Greater than sign &gt;
+TABLE 2.3 Common Special Characters
+
+Special Entity Characters 45
+
+Hands-On Practice 2.9
+Figure 2.13 shows the web page you will create in this Hands-On Practice. Launch a text
+editor and open the template.html file from the chapter2 folder in the student files.
+Change the title of the web page to
+“Web Design Steps” by modifying the
+text between the <title> and
+</title> tags.
+The sample page shown in Figure 2.13
+contains a heading, an unordered list,
+and the copyright information. You will
+add these elements to your file next.
+Configure the phrase, “Web Design
+Steps”, as a level 1 heading (<h1>)
+as follows:
+<h1>Web Design Steps</h1>
+Now create the unordered list. The first
+line of each bulleted item is the title of
+the web design step. In the sample, each
+step title should be strong or stand out
+from the rest of the text. The code for the
+beginning of the unordered list follows:
+<ul>
+<li><strong>Determine the
+Intended Audience</strong>
+<br> The colors, images, fonts, and layout should be tailored to
+the <em> preferences of your audience.</em> The type of site content
+(reading level, amount of animation, etc.) should be appropriate for
+your chosen audience.</li>
+
+Edit your design.html file and code the entire unordered list shown in Figure 2.13. Remem-
+ber to code the closing </ul> tag at the end of the list. Finally, configure the copyright
+
+information in a paragraph and apply the small element. Use the special character &copy;
+for the copyright symbol. The code for the copyright line follows:
+<p><small>Copyright &copy; 2022 Your name. All Rights
+Reserved.</small></p>
+
+Save your file as design.html. Launch a browser and test your page. How did you do? Com-
+pare your work to the sample in the student files (chapter2/design.html).
+
+FIGURE 2.13 Sample design.html.
+
+46 Chapter 2 ◗ HTML Basics
+
+The W3C has a free Markup Validation Service available at http://validator.w3.org that will
+check your code for syntax errors and validate your web pages. HTML validation provides
+you with quick self-assessment—you can prove that your code uses correct syntax. In the
+working world, HTML validation serves as a quality assurance tool. Invalid code may cause
+browsers to render the pages slower than otherwise.
+
+Hands-On Practice 2.10
+In this Hands-On Practice, you will use the W3C Markup Validation Service to validate a web
+page file. Launch a text editor and open the design.html file from the chapter2 folder in the
+student files.
+
+1. We will add an error to the design.html
+page. Delete the first closing </strong>
+tag. This modification should generate
+several error messages.
+2. Next, attempt to validate the design.html
+file. Launch a browser and visit the W3C
+Markup Validation Service file upload
+page at http://validator.w3.org and
+select the “Validate by File Upload” tab.
+Click the Browse button and select the
+
+chapter2/design.html file from your com-
+puter. Click the Check button to upload
+
+the file to the W3C site (Figure 2.14).
+3. A results page will be displayed. Scroll
+down the page to view the errors, as
+shown in Figure 2.15.
+
+4. Notice that the message indicates line 12, which is the first line after the missing
+closing </strong> tag. HTML error messages often point to a line that follows the
+error. The text of the message “End tag for li seen, but there were open elements”
+lets you know that something is wrong. It’s up to you to figure out what it is. A good
+place to start is to check your container tags and make sure they are in pairs. In this
+case, that is the problem. You can scroll down to view the other errors. However,
+since multiple error messages are often displayed after a single error occurs, it’s a
+good idea to fix one item at a time and then revalidate.
+
+HTML
+Validation
+HTML Syntax
+Validation
+
+FIGURE 2.14 Validate your page.
+Screenshots of W3C. Courtesy of W3C (World Wide Web Consortium)
+
+HTML Syntax Validation 47
+
+5. Edit the design.html file in a text editor
+and add the missing </strong> tag.
+Save the file. Launch a browser and visit
+http://validator.w3.org and select the
+“Validate by File Upload” tab. Click the
+Browse button and select your file. Click
+the Check button.
+
+FIGURE 2.15 The error indicates line 12.
+Screenshots of W3C. Courtesy of W3C (World Wide Web
+Consortium)
+
+FIGURE 2.16 The page has passed the validation test.
+Screenshots of W3C. Courtesy of W3C (World Wide Web
+Consortium)
+
+In addition to the W3C validation service, there are other tools that you can use to check
+the syntax of your code. Try out the validators at the following websites:
+* Validator.nu: https://html5.validator.nu
+* Freeformatter.com: https://www.freeformatter.com/html-validator.html
+
+6. Your display should be similar to that
+
+shown in Figure 2.16. Notice the mes-
+sage, “ Document checking completed. No
+
+errors or warnings to show.” This means
+that your page passed the validation test.
+Congratulations, your web page is valid!
+
+It’s a good practice to validate your web pages. However, when validating code, use com-
+mon sense. Since web browsers still do not completely follow W3C recommendations,
+
+there will be situations, such as when adding multimedia to a web page, when HTML
+code configured to work reliably across a variety of browsers and platforms will not pass validation.
+
+48 Chapter 2 ◗ HTML Basics
+
+HTML5 introduces a number of semantic structural elements that can be used along with
+the generic div element to configure specific areas on a web page. These new HTML5
+header, nav, main, and footer elements are intended to be used in conjunction with div and
+
+other elements to structure web page documents in a more meaningful manner that indi-
+cates the purpose of each structural area. Figure 2.17 shows a diagram of a page (called
+
+a wireframe) that indicates how the structure of a web page could be configured with the
+header, nav, main, div, and footer elements.
+The Div Element
+
+The div element has been used for many years to configure a generic struc-
+tural area or “division” on a web page as a block display with empty space
+
+above and below. A div element begins with a <div> tag and ends with a
+</div> tag. Use a div element when you need to format an area of a web
+
+page that may contain other block display elements such as headings, para-
+graphs, unordered lists, and even other div elements. You’ll use Cascading
+
+Style Sheets (CSS) later in this book to style and configure the color, font,
+and layout of HTML elements.
+
+The Header Element
+The purpose of the HTML5 header element is to contain the headings of either a web page
+document or an area within the document such as a section or an article (more on the
+section element and article element in Chapter 8). The header element begins with the
+<header> tag and ends with the </header> tag. The header element is block display and
+typically contains one or more heading level elements (h1 through h6).
+
+The Nav Element
+The purpose of the HTML5 nav element is to contain a section of navigation links. The
+block display nav element begins with the <nav> tag and ends with the </nav> tag.
+
+The Main Element
+The purpose of the HTML5 main element is to contain the main content of a web page
+document. The block display main element begins with the <main> tag and ends with the
+</main> tag.
+Structural
+Elements
+
+FIGURE 2.17 Structural
+elements.
+
+Structural Elements 49
+
+The Footer Element
+The purpose of the HTML5 footer element is to contain the footer content of a web page or
+section of a web page. The block display footer element begins with the <footer> tag and
+ends with the </footer> tag.
+Hands-On Practice 2.11
+In this Hands-On Practice, you will use structural elements
+as you create the Trillium Media Design home page,
+shown in Figure 2.18. Launch a text editor, and open the
+template.html file from the chapter2 folder in the student
+files. Edit the code as follows:
+1. Modify the title of the web page by changing the text
+
+between the <title> and </title> tags to Tril-
+lium Media Design.
+
+2. Position your cursor in the body section and code
+the header element with the text, “Trillium Media
+Design” in an h1 element:
+<header>
+<h1>Trillium Media Design</h1>
+</header>
+3. Code a nav element to contain text that will indicate
+the main navigation for the website. Configure bold text (use the b element) and use the
+&nbsp; special character to add extra blank space:
+<nav>
+<b>Home &nbsp; Services &nbsp; Contact</b>
+</nav>
+4. Code the content within a main element that contains the h2 and paragraph elements:
+<main>
+<h2>New Media and Web Design</h2>
+<p>Trillium Media Design offers a comprehensive range of
+services to take your company&apos;s Web presence to the next
+level.</p>
+<h2>Meeting Your Business Needs</h2>
+<p>Our expert designers will listen to you as they create a website
+that helps to promote and grow your business.</p>
+</main>
+5. Configure the footer element to contain a copyright notice displayed in small font size
+(use the small element) and italic font (use the i element). Be careful to properly nest
+the elements as shown here:
+<footer>
+<small><i>Copyright &copy; 2022 Your Name Here</i></small>
+</footer>
+Save your page as structure.html. Test your page in a browser. It should look similar
+to Figure 2.18. You can compare your work to the sample in the student files
+(chapter2/structure.html).
+
+FIGURE 2.18 Trillium home page.
+
+50 Chapter 2 ◗ HTML Basics
+
+Coding HTML is a skill and skills are best learned by practice. You’ll get more practice cod-
+ing a web page using structural elements in this section.
+
+Hands-On Practice 2.12
+In this Hands-On Practice, you will use the wireframe shown in Figure 2.19 as
+a guide as you create the Casita Sedona Bed & Breakfast web page, shown
+in Figure 2.20.
+Launch a text editor and open the template.html file from the chapter2 folder
+in the student files. Edit the code as follows:
+1. Modify the title of the web page by changing the text between the
+<title> and </title> tags to Casita Sedona.
+
+Practice with
+Structural Elements
+
+FIGURE 2.19 Wireframe for
+Casita Sedona.
+
+FIGURE 2.20 Casita Sedona web page.
+
+2. Position your cursor in the body section and code the header element with the text,
+“Casita Sedona Bed &amp; Breakfast” in an h1 element. Be sure to use the special
+character &amp; for the ampersand:
+<header>
+<h1>
+Casita Sedona Bed &amp; Breakfast
+</h1>
+</header>
+
+Practice with Structural Elements 51
+
+3. Code a nav element to contain text that will indicate the main navigation for the web-
+site. Configure bold text (use the b element) and use the &nbsp; special character to
+
+add extra blank space:
+<nav>
+<b>
+Home &nbsp;
+Rooms &nbsp;
+Events &nbsp;
+Contact
+</b>
+</nav>
+4. Code the content within a main element. Start with the h2 and paragraph elements:
+<main>
+<h2>Stay in the Heart of Sedona</h2>
+<p>At Casita Sedona Bed &amp; Breakfast you&apos;ll be close to
+art galleries, shops, restaurants, hiking trails, and tours. Ride
+the free trolley to shops and galleries.</p>
+<h3>Luxurious Rooms</h3>
+<p>Stay in a well-appointed room at Casita Sedona with your own
+fireplace, king-size bed, and balcony overlooking the red rocks.</p>
+</main>
+5. Configure the company name, address, and phone number within a div element. Code
+the div element within the main element before the closing main tag. Use line break
+tags to display the name, address, and phone information on separate lines and to
+create extra empty space before the footer:
+<div>
+<strong>Casita Sedona Bed &amp; Breakfast</strong><br>
+612 Tortuga Lane<br>
+Sedona, AZ 86336<br>
+928-555-5555<br>
+</div>
+6. Configure the footer element to contain a copyright notice displayed in small font size
+(use the small element) and italic font (use the i element). Be careful to properly nest
+the elements as shown here:
+<footer>
+<small><i>Copyright &copy; 2022 Your Name Here</i></small>
+</footer>
+Save your page as casita.html. Test your page in a browser. It should look similar
+to Figure 2.20. You can compare your work to the sample in the student files
+(chapter2/casita.html).
+
+52 Chapter 2 ◗ HTML Basics
+You’ve just worked with the HTML5 header, nav, main, and footer elements. These HTML5 elements are
+used along with div and other elements to structure web page documents in a meaningful manner that
+defines the purpose of the structural areas. In this section, you’ll explore more HTML5 structural elements.
+The Section Element
+The purpose of a section element is to indicate a “section” of a document, such as a chapter or topic. This
+block display element could contain header, footer, section, article, aside, figure, div, and other elements
+needed to configure the content.
+The Article Element
+The article element is intended to present an independent entry, such as a blog posting, comment, or e-zine
+article that could stand on its own. This block display element could contain header, footer, section, aside,
+figure, div, and other elements needed to configure the content.
+The Aside Element
+The aside element indicates a sidebar or other tangential content. This block display element could contain
+header, footer, section, aside, figure, div, and other elements needed to configure the content.
+The Time Element
+The time element represents a date or a time. The time element is not a structural element, but it is
+included here because it is useful to identity the date of content, such as an article on a web page or
+a blog entry. An optional datetime attribute can be used to specify a calendar date and/or time in
+machine- readable format.2 Use YYYY-MM-DD for a date. Use a 24-hour clock and HH:MM for time.
+
+Hands-On Practice 2.13
+In this Hands-On Practice, you’ll edit a web page document and apply the section, article, aside, and time
+elements to create the page with blog postings shown in Figure 2.21.
+More Structural
+Elements
+
+More Structural Elements 53
+
+Launch a text editor and open the starter.html file
+from the chapter2 folder in the student files. Save
+the file as blog.html. Examine the source code.
+1. Locate the title tag in the head section.
+Change the text within the title tags to
+“Lighthouse Bistro Blog.”
+2. Locate the opening main tag. Delete the HTML
+elements and text between the opening and
+closing main tags.
+
+3. Code an aside element with the following con-
+tent below the opening main tag. The HTML
+
+follows:
+<aside>
+<p><i>Watch for the March
+Madness Wrap next month!</i></p>
+</aside>
+4. Code an opening section tag followed by an h2
+element. The HTML follows:
+<section>
+<h2>Bistro Blog</h2>
+5. Code two blog articles as shown below. Note the use of the header, h3, time, and
+paragraph elements. Also, code a closing section tag. The HTML follows:
+<article>
+<header><h3>Valentine Wrap</h3></header>
+<time datetime="2022-02-01">February 1, 2022</time>
+<p>The February special sandwich is the Valentine Wrap &mdash;
+heart-healthy organic chicken with roasted red peppers on a
+whole wheat wrap.</p>
+</article>
+<article>
+<header><h3>New Coffee of the Day Promotion</h3></header>
+<time datetime="2022-01-12">January 12, 2022</time>
+<p>Enjoy the best coffee on the coast in the comfort of your
+home. We will feature a different flavor of our gourmet,
+locally roasted coffee each day with free bistro tastings and a
+discount on one-pound bags.</p>
+</article>
+</section>
+Save your file. Display your blog.html page in a browser. It should look similar to the page
+shown in Figure 2.21. A sample solution is in the student files (chapter2/blog.html).
+FIGURE 2.21 The blog page.
+
+54 Chapter 2 ◗ HTML Basics
+
+Use the a element (commonly called the anchor element) to specify a hyperlink, often
+
+referred to as a link, to another web page or file that you want to display. Each anchor ele-
+ment begins with an <a> tag and ends with an </a> tag. The opening and closing anchor
+
+tags surround the text that the user can click to perform the hyperlink. Use the href attri-
+bute to configure the hyperlink reference, which identifies the name and location of the file to
+
+access.
+Figure 2.22 shows a web page document with an anchor tag that configures a hyperlink to
+this book’s website, http://webdevbasics.net.
+The code for the anchor tag in Figure 2.22 is as follows:
+<a href="http://webdevbasics.net">Basics of Web Design Textbook
+Companion</a>
+Notice that the href value is the URL for the website and will display the home page. The
+text that is typed between the two anchor tags displays on the web page as a hyperlink and
+is underlined by most browsers. When you move the mouse over a hyperlink, the cursor
+changes to a pointing hand, as shown in Figure 2.22.
+Hands-On Practice 2.14
+To create the web page shown in Figure 2.22, launch a text editor and open the template.html
+file from the chapter2 folder in the student files. Modify the title element and add an anchor
+tag to the body section as indicated by the following code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Anchor Example</title>
+<meta charset="utf-8">
+</head>
+<body>
+<a href="http://webdevbasics.net">Basics of Web
+Design Textbook Companion</a>
+</body>
+</html>
+
+Save the document as anchor.html on your hard drive or flash drive. Launch a browser and
+test your page. It should look similar to the page shown in Figure 2.22. You can compare
+your work with the solution found in the student files (chapter2/anchor.html).
+
+Anchor Element
+
+FIGURE 2.22 Sample hyperlink.
+
+Can images be hyperlinks?
+
+Yes. Although we’ll concentrate on text hyperlinks in this chapter, it is also possible to con-
+figure an image as a hyperlink. You’ll get practice with image links in Chapter 5.
+
+Anchor Element 55
+
+Targeting Hyperlinks
+You may have noticed in Hands-On Practice 2.14 that when a visitor clicks a hyperlink, the new
+web page automatically opens in the same browser window. You can configure the target
+attribute on an anchor tag with target="_blank" to open a hyperlink in a new browser
+window or browser tab. Note that you cannot control whether the web page opens in a new
+window or opens in a new tab—that is dependent on your visitor’s browser configuration. To
+see the target attribute in action, try the example in the student files at chapter2/target.html.
+Absolute Hyperlink
+
+An absolute hyperlink indicates the absolute location of a resource on the Web. The hyper-
+link in Hands-On Practice 2.14 is an absolute hyperlink. Use an absolute hyperlink when
+
+you need to link to resources on other websites. The href value for an absolute hyperlink to
+
+the home page of a website includes the http://protocol and the domain name. The follow-
+ing hyperlink is an absolute hyperlink to the home page of this book’s website:
+
+<a href="http://webdevbasics.net">Basics of Web Design</a>
+Note that if we want to access a web page other than the home page on the book’s
+website, we can also include a specific folder name and file name. For example, the
+following anchor tag configures an absolute hyperlink for a file named chapter1.html
+located in a folder named 6e on this book’s website:
+<a href="http://webdevbasics.net/6e/chapter1.html">Chapter 1</a>
+Relative Hyperlink
+When you need to link to web pages within your site, use a relative hyperlink. The href
+value for a relative hyperlink does not begin with http:// and does not include a domain
+name. For a relative hyperlink, the href value will contain only the file name (or folder and
+file name) of the web page you want to display. The hyperlink location is relative to the
+page currently being displayed. For example, if you are coding a home page (index.html)
+for a website and want to link to a page named contact.html located in the same folder as
+index.html, you can configure a relative hyperlink as shown in the following code sample:
+<a href="contact.html">Contact Us</a>
+Block Anchor
+It’s typical to use anchor tags to configure phrases or even just a single word as a hyperlink.
+HTML5 provides a new function for the anchor tag—the block anchor. A block anchor can
+configure one or more entire elements (even those that display as a block, such as a div,
+h1, or paragraph) as a hyperlink. See an example in the student files (chapter2/block.html).
+Accessibility and Hyperlinks
+Visually challenged visitors who are using a screen reader can configure the software to
+display a list of the hyperlinks in the document. However, a list of hyperlinks is only useful
+if the text describing each hyperlink is actually helpful and descriptive. For example, on your
+college website, a “Search the course schedule” link would be more useful than a hyperlink
+that simply says “More information” or “click here.” Keep this in mind as you are coding
+hyperlinks in your web pages.
+
+56 Chapter 2 ◗ HTML Basics
+
+The best way to learn how to code web pages is by actually doing it! In this section, you’ll
+
+create three pages in a small website so that you can practice using the anchor tag to con-
+figure hyperlinks.
+
+Site Map
+Figure 2.23 displays the site map for your new website—a Home page with two content
+pages: a Services page and a Contact page.
+
+A site map represents the structure, or organization, of pages in a website
+in a visual manner. Each page in the website is represented by a box on
+the site map. Review Figure 2.23 and notice that the Home page is at the
+top of the site map. The second level in a site map shows the other main
+pages of the website. In this very small three-page website, the other two
+pages (Services and Contact) are included on the second level. The main
+navigation of a website usually includes hyperlinks to the pages shown on
+the first two levels of the site map.
+
+Hands-On Practice 2.15
+Figure 2.23 displays the site map for your new website—a home page (index.html) with two
+content pages: services page (services.html) and contact page (contact.html).
+1. Create a Folder. If you had printed papers to organize, you would probably store
+
+them in a paper folder. Web designers store and organize their computer files by cre-
+ating a folder on a hard drive (or portable storage such as an SD card or a Flash drive)
+
+for each website. This helps them to be efficient as they work with many different
+
+Practice with
+Hyperlinks
+
+FIGURE 2.23 Site map.
+
+How do I create a new folder?
+Before you begin to learn how to code web pages, it’s a good idea to be comfortable using
+your computer for basic tasks such as creating a new folder. If you don’t remember how to
+
+create a folder, review Hands-On Practice 1.1 for instructions.
+
+Practice with Hyperlinks 57
+
+websites. You will organize your own web design work by creating a new folder for
+
+each website and storing your files for that website in the new folder. Use your operat-
+ing system to create a new folder named mypractice for your new website.
+
+2. Create the Home Page. Use the Trillium Media Design web page (Figure 2.18)
+from Hands-On Practice 2.11 as a starting point for your new home page (shown in
+Figure 2.24). Copy the file from Hands-On Practice 2.11 (chapter2/structure.html) into
+
+your mypractice folder. Change the file name of structure.html to index.html. It’s com-
+mon practice to use the file name index.html for the home page of a website.
+
+FIGURE 2.24 New index.html web page.
+Launch a text editor and open the index.html file.
+a. The navigation hyperlinks will be located within the nav element. You will edit the
+code within the nav element to configure three hyperlinks:
+◗ The text “Home” will hyperlink to index.html
+◗ The text “Services” will hyperlink to services.html
+◗ The text “Contact” will hyperlink to contact.html
+Modify the code within the nav element as given below:
+<nav>
+<b>
+<a href="index.html">Home</a> &nbsp;
+<a href="services.html">Services</a> &nbsp;
+<a href="contact.html">Contact</a>
+</b>
+</nav>
+b. Save the index.html file in your mypractice folder. Test your page in a browser. It
+should look similar to Figure 2.24. You can compare your work to the sample in the
+student files (chapter2/2.15/index.html).
+
+58 Chapter 2 ◗ HTML Basics
+
+3. Create the Services Page. It is common practice to create a new web page based on
+
+an existing page. You will use the index.html file as a starting point for the new Ser-
+vices page, as shown in Figure 2.25.
+
+FIGURE 2.25 The services.html web page.
+
+Open your index.html file in a text editor and save the file as services.html. Edit the
+code as indicated below:
+a. Modify the title of the web page by changing the text between the <title> and
+
+</title> tags to “Trillium Media Design - Services”. In order to create a con-
+sistent header, navigation, and footer for the web pages in this website, do not
+
+change the code within the header, nav, or footer elements.
+b. Position your cursor in the body section and delete the code and text between
+the opening and closing main tags. Code the main page content (heading 2 and
+description list) for the Services page between the main tags as follows:
+<h2> Our Services Meet Your Business Needs</h2>
+<dl>
+<dt><strong>Website Design</strong></dt>
+<dd>Whether your needs are large or small, Trillium can get
+you on the Web!</dd>
+<dt><strong>E-Commerce Solutions</strong></dt>
+<dd>Trillium offers quick entry into the e-commerce
+marketplace.</dd>
+<dt><strong>Search Engine Optimization</strong></dt>
+<dd>Most people find new sites using search engines.
+Trillium can get your website noticed.</dd>
+</dl>
+c. Save the services.html file in your mypractice folder. Test your page in a browser. It
+should look similar to Figure 2.25. You can compare your work to the sample in the
+student files (chapter2/2.15/services.html).
+
+Practice with Hyperlinks 59
+
+4. Create the Contact Page. Use the
+index.html file as a starting point for the
+Contact page, as shown in Figure 2.26.
+Launch a text editor, open index.html,
+and save the file as contact.html.
+Edit the code as indicated below:
+a. Modify the title of the web page
+by changing the text between the
+<title> and </title> tags to
+“Trillium Media Design - Contact”.
+In order to create a consistent header,
+navigation, and footer for the web
+pages in this website, do not change
+the code within the header, nav, or
+footer elements.
+
+b. Position your cursor in the body sec-
+tion and delete the code and text
+
+between the opening main tag and the closing main tag. Code the main page con-
+tent for the Contact page between the main tags:
+
+<h2>Contact Trillium Media Design Today</h2>
+<ul>
+<li>E-mail: contact@trilliummediadesign.com</li>
+<li>Phone: 555-555-5555</li>
+</ul>
+c. Save the contact.html file in your mypractice folder. Test your page in a browser. It
+should look similar to Figure 2.26. Test your page by clicking each link. When you
+click the “Home” hyperlink, the index.html page should be displayed. When you click
+the “Services” hyperlink, the services.html page should be displayed. When you
+click the “Contact” hyperlink, the contact.html page should be displayed. You can
+compare your work to the sample in the student files (chapter2/2.15/contact.html).
+FIGURE 2.26 The contact.html web page.
+
+What if my relative hyperlink doesn’t work?
+Check the following:
+
+◗ Did you save the files in the specified folder?
+◗ Did you save the files with the names as requested? Use Windows Explorer or Finder (Mac users) to
+verify the actual names of the files you saved.
+◗ Did you type the file names correctly in the anchor tag’s href property? Check for typographical errors.
+◗ When you place your mouse over a link, the file name of a relative link will be displayed in the status
+bar in the lower edge of the browser window. Verify that this is the correct file name. On many
+operating systems, such as UNIX or Linux, the use of uppercase and lowercase letters in file names
+matters—make sure that the file name and the reference to it are in the same case.
+
+60 Chapter 2 ◗ HTML Basic
+
+The anchor tag can also be used to create e-mail hyperlinks. An e-mail hyperlink will
+automatically launch the default mail program configured for the browser. It is similar to an
+external hyperlink with the following two exceptions:
+◗ It uses mailto: instead of http://.
+◗ It launches the default e-mail application for the visitor’s browser with your e-mail
+address as the recipient.
+For example, to create an e-mail hyperlink to the e-mail address help@webdevbasics.net,
+code the following:
+<a href="mailto:help@webdevbasics.net">help@webdevbasics.net</a>
+It is good practice to place the e-mail address both on the web page and within the anchor
+tag. Not everyone has an e-mail program configured with his or her browser. By placing the
+e-mail address in both places, you increase usability for all of your visitors.
+Hands-On Practice 2.16
+In this Hands-On Practice, you will modify the Contact page (contact.html) of the website
+you created in Hands-On Practice 2.15 and configure an e-mail link in the page content
+area. Launch a text editor and open the contact.html file from your mypractice folder. This
+example uses the contact.html file found in the student files in the chapter2/2.15 folder.
+
+E-Mail Hyperlinks
+
+FIGURE 2.27 An e-mail hyperlink has been configured on the
+Contact page.
+
+E-Mail Hyperlinks 61
+
+Configure the e-mail address in the content area as an e-mail hyperlink as given below:
+<li>E-mail:
+<a href="mailto:contact@trilliummediadesign.com">contact@trilliummediadesign.com</a>
+</li>
+Save and test the page in a browser. The browser display should look similar to the
+page shown in Figure 2.27. Compare your work with the sample in the student files
+(chapter2/2.16/contact.html).
+
+Free web-based e-mail is offered by many providers, such as Google, Outlook, and so on.
+You can create one or more free e-mail accounts to use when communicating with new
+websites or signing up for free services, such as newsletters. This will help to organize your
+
+e-mail into those you need to access and respond to right away (such as school, work, or personal mes-
+sages) and those you can get to at your convenience.
+
+Won’t displaying my actual e-mail address on a web page increase spam?
+Yes and no. While it’s possible that some unethical spammers may harvest web pages
+for e-mail addresses, the chances are that your e-mail application’s built-in spam filter
+will prevent your inbox from being flooded with messages. When you configure an easily readable e-mail
+hyperlink, you increase the usability of your website for your visitors in the following situations:
+◗ The visitor may be at a public computer with no e-mail application configured. In this case, when
+the e-mail hyperlink is clicked, an error message may display, and the visitor will have difficulty
+contacting you using the e-mail link.
+◗ The visitor may be at a private computer but may prefer not to use the e-mail application (and
+
+address) that is configured by default to work with the browser. Perhaps he or she shares the com-
+puter with others, or perhaps he or she wishes to preserve the privacy of the default e-mail address.
+
+If you prominently displayed your actual e-mail address, in both of these situations, the visitor can still
+access your e-mail address and use it to contact you (in either their e-mail application or via a web-based
+e-mail system such as Google’s Gmail). The result is a more usable website for your visitors.
